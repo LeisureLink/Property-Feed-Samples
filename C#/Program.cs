@@ -7,8 +7,9 @@ namespace PropertyFeedSampleApp
     {
         static void Main(string[] args)
         {
-            const string userName = "VACATION11";
-            const string password = "f33der1!";
+            //You should have been provided values for the following
+            const string userName = "YOUR_USER_NAME";
+            const string password = "YOUR_PASSWORD";
 
             using (var client = new DataReceiverServiceSoapClient())
             {
