@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://VacationRoost.GatewayServices.DataReceiverService" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://VacationRoost.GatewayServices.DataReceiverService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://VacationRoost.GatewayServices.DataReceiverService">
+      <s:element name="OTARequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="otaRequest" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OTARequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OTARequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="DataExtract">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="extractType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gatewayProviderType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="supplierId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rentalUnitId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataExtractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DataExtractResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidRentalUnitIdsForExtract">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gatewayProviderType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="supplierId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sendSupplierIdsOnly" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidRentalUnitIdsForExtractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetValidRentalUnitIdsForExtractResult" type="tns:ArrayOfLong" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLong">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="long" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OTARequestSoapIn">
+    <wsdl:part name="parameters" element="tns:OTARequest" />
+  </wsdl:message>
+  <wsdl:message name="OTARequestSoapOut">
+    <wsdl:part name="parameters" element="tns:OTARequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="OTARequestAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="DataExtractSoapIn">
+    <wsdl:part name="parameters" element="tns:DataExtract" />
+  </wsdl:message>
+  <wsdl:message name="DataExtractSoapOut">
+    <wsdl:part name="parameters" element="tns:DataExtractResponse" />
+  </wsdl:message>
+  <wsdl:message name="DataExtractAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetValidRentalUnitIdsForExtractSoapIn">
+    <wsdl:part name="parameters" element="tns:GetValidRentalUnitIdsForExtract" />
+  </wsdl:message>
+  <wsdl:message name="GetValidRentalUnitIdsForExtractSoapOut">
+    <wsdl:part name="parameters" element="tns:GetValidRentalUnitIdsForExtractResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetValidRentalUnitIdsForExtractAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="DataReceiverServiceSoap">
+    <wsdl:operation name="OTARequest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Supported Messages: OTA_PingRQ; OTA_HotelRateAmountNotifRQ; OTA_HotelBookingRuleNotifRQ; OTA_HotelInvCountNotifRQ;</wsdl:documentation>
+      <wsdl:input message="tns:OTARequestSoapIn" />
+      <wsdl:output message="tns:OTARequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DataExtract">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves Property Extract XML</wsdl:documentation>
+      <wsdl:input message="tns:DataExtractSoapIn" />
+      <wsdl:output message="tns:DataExtractSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidRentalUnitIdsForExtract">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retrieves Valid RentalUnitIds or SupplierIds for Extract</wsdl:documentation>
+      <wsdl:input message="tns:GetValidRentalUnitIdsForExtractSoapIn" />
+      <wsdl:output message="tns:GetValidRentalUnitIdsForExtractSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataReceiverServiceSoap" type="tns:DataReceiverServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OTARequest">
+      <soap:operation soapAction="http://VacationRoost.GatewayServices.DataReceiverService/OTARequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:OTARequestAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DataExtract">
+      <soap:operation soapAction="http://VacationRoost.GatewayServices.DataReceiverService/DataExtract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:DataExtractAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidRentalUnitIdsForExtract">
+      <soap:operation soapAction="http://VacationRoost.GatewayServices.DataReceiverService/GetValidRentalUnitIdsForExtract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetValidRentalUnitIdsForExtractAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataReceiverServiceSoap12" type="tns:DataReceiverServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OTARequest">
+      <soap12:operation soapAction="http://VacationRoost.GatewayServices.DataReceiverService/OTARequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:OTARequestAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DataExtract">
+      <soap12:operation soapAction="http://VacationRoost.GatewayServices.DataReceiverService/DataExtract" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:DataExtractAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidRentalUnitIdsForExtract">
+      <soap12:operation soapAction="http://VacationRoost.GatewayServices.DataReceiverService/GetValidRentalUnitIdsForExtract" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetValidRentalUnitIdsForExtractAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataReceiverService">
+    <wsdl:port name="DataReceiverServiceSoap" binding="tns:DataReceiverServiceSoap">
+      <soap:address location="https://otaservice.vacationroost.com:8088/DataReceiverService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataReceiverServiceSoap12" binding="tns:DataReceiverServiceSoap12">
+      <soap12:address location="https://otaservice.vacationroost.com:8088/DataReceiverService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
