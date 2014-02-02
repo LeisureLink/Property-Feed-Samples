@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:AuthHeader xmlns="http://VacationRoost.GatewayServices.DataReceiverService" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:h="http://VacationRoost.GatewayServices.DataReceiverService">
+      <UserName>USER_NAME</UserName>
+      <Password>PASSWORD</Password>
+    </h:AuthHeader>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <DataExtract xmlns="http://VacationRoost.GatewayServices.DataReceiverService">
+      <extractType>STANDARD</extractType>
+      <gatewayProviderType />
+      <supplierId />
+      <rentalUnitId>98999</rentalUnitId>
+    </DataExtract>
+  </s:Body>
+</s:Envelope>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetValidRentalUnitIdsForExtractResponse xmlns="http://VacationRoost.GatewayServices.DataReceiverService">
+      <GetValidRentalUnitIdsForExtractResult>
+        <long>6781</long>
+        <long>7074</long>
+        <long>7386</long>
+        <!-- removed a lot of supplier ids to shorten the example -->
+        <long>7796</long>
+        <long>7830</long>
+      </GetValidRentalUnitIdsForExtractResult>
+    </GetValidRentalUnitIdsForExtractResponse>
+  </soap:Body>
+</soap:Envelope>

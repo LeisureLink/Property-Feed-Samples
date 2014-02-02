@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetValidRentalUnitIdsForExtractResponse xmlns="http://VacationRoost.GatewayServices.DataReceiverService">
+      <GetValidRentalUnitIdsForExtractResult>
+        <long>98999</long>
+        <long>95203</long>
+        <long>103604</long>
+        <!-- removed a lot of rental unit ids to shorten the example -->
+        <long>93388</long>
+        <long>86224</long>
+      </GetValidRentalUnitIdsForExtractResult>
+    </GetValidRentalUnitIdsForExtractResponse>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,106 @@
+﻿<Properties>
+  <Property Id="98999" VRStatus="ACTIVE:Active" Source="VacationRoost">
+    <Name><![CDATA[Copper Springs - Deluxe 1BR Condo #329]]></Name>
+    <Description>
+      <![CDATA[** Book By: 4/20/2014 - 5th Night Free **<br/>** Book By: 4/20/2014 - 6th Night Free **<br/>** Book By: 4/20/2014 - 7th Night Free **<br/>** Book By: 4/12/2014 - Save 5% **<br/>** Book By: 4/12/2014 - Save 10% **<br/>** Book By: 4/12/2014 - Save 15% **<br/><p>Copper Springs at Copper Mountain is situated in the East Village of Copper Mountain, sits directly across the street from the Super Bee base area. It's a short 50 yard walk to get on the six person lift that will have at the top of the mountain in a couple minutes.
+        <br><br>
+        Stay at Copper Springs comes complete with one spot in the underground parking garage, ski locker to store the gear on the first floor, second floor exercise room and pool table, three common outdoor hot tubs and a sauna and shuttle service right in front of the building. Complimentary athletic club access also comes standard at Copper Springs.<br></p><p>Unit #329 is a one bedroom, one bathroom condominium on the ground floor complete with full kitchen, gas fireplace, large flat screen TV in the living room and complimentary WiFi in room. Bedding includes a queen bed in the bedroom and a queen sofa sleeper in the living area. Common laundry facilities are located a few doors down.
+        <br><br>
+        The Copper Coach is also available, just call and they will pick guests up at the front door and wisk them down to Center Village, Union Creek or anywhere else at Copper they'd like to go and when they are ready to come home, call them again and they'll take them right back to the front door.<br></p><p class="disclaimer">Photos are representative of the property and may differ from the actual unit that is reserved.</p>]]>
+    </Description>
+    <Occupancy><![CDATA[4]]></Occupancy>
+    <Bedrooms><![CDATA[1]]></Bedrooms>
+    <Baths><![CDATA[1.0]]></Baths>
+    <URL><![CDATA[http://www.VacationRoost.com/details-L98999.aspx?]]></URL>
+    <Policies>
+      <Policy ID="3">
+        <![CDATA[<b>Check-in Instructions:</b> Bighorn Rentals
+        <br>110 South 1st Avenue
+        <br>Frisco, CO 80443
+        <p>
+        <b>Check-in: 3:00 PM
+        <br>Check-out: 10:00 AM</b>
+        <p>
+        <b>Office Hours</b>
+        <br>Summer: Monday through Friday from 9AM - 6PM and Saturdays 8AM to 5PM
+        <br>Winter: Monday through Friday 8AM – 6PM and Saturdays 8AM to 5PM.
+        <br>If arriving outside of these hours, please refer to the After Hours Check-in Instructions listed below.
+        <p>
+        <b>Driving Directions Directions from Denver:</b>
+        <ul><li>Go West on I-70 (about 100 miles from DIA) through the Eisenhower Tunnel to the Frisco Main Street Exit #201.
+        <li>At this stop sign, turn left onto Main Street.
+        <li>Turn right on South 1st Avenue.
+        <li>110 South 1st Avenue will be on your LEFT.
+        </ul>
+        <p>
+        <b>After Hours Check-in Instructions</b>
+        <br>If you are arriving outside of these hours, you will find a packet with the reservation name on it in the lock-box mounted to the right of the office front door.
+        <p>To open lock-box:
+        <ul>First turn knob to the left to activate the buttons.
+        <li>Then press <b>1 - 3 – 5</b>
+        <li>Now turn knob to the right to open.
+        <li>Retrieve your named packet with map and keys, close the door and turn knob to the left to relock.
+        </ul> <br/>]]>
+      </Policy>
+    </Policies>
+    <Location>
+      <Address1><![CDATA[Wheeler Circle]]></Address1>
+      <Address2><![CDATA[]]></Address2>
+      <City><![CDATA[Copper Mountain]]></City>
+      <State><![CDATA[CO]]></State>
+      <PostalCode><![CDATA[80443]]></PostalCode>
+      <Country><![CDATA[US]]></Country>
+      <Destination><![CDATA[Copper Mountain]]></Destination>
+      <Latitude><![CDATA[39.500357]]></Latitude>
+      <Longitude><![CDATA[-106.1456624]]></Longitude>
+    </Location>
+    <Images>
+      <image><![CDATA[http://www.vacationroost.com/property/0365205/photo-01-c.jpg]]></image>
+      <image><![CDATA[http://www.vacationroost.com/property/0365205/photo-02-c.jpg]]></image>
+      <image><![CDATA[http://www.vacationroost.com/property/0365205/photo-03-c.jpg]]></image>
+      <!-- lots of images removed to shorten the example -->
+      <image><![CDATA[http://www.vacationroost.com/property/0365205/photo-17-c.jpg]]></image>
+      <image><![CDATA[http://www.vacationroost.com/property/0365205/photo-18-c.jpg]]></image>
+    </Images>
+    <Amenities>
+      <Amenity Type="Approved"><![CDATA[Cable or Satellite TV]]></Amenity>
+      <Amenity Type="Approved"><![CDATA[Deck/Balcony/Patio - Private]]></Amenity>
+      <Amenity Type="Approved"><![CDATA[Elevator Access]]></Amenity>
+      <!-- lots of amenities removed to shorten the example -->
+      <Amenity Type="Approved"><![CDATA[Sauna - Community]]></Amenity>
+      <Amenity Type="Approved"><![CDATA[Shuttle Access]]></Amenity>
+    </Amenities>
+    <RateRanges CurrencyCode="USD">
+      <RateAmount Night="2014-02-02" StayUnit="Nightly"><![CDATA[195.00]]></RateAmount>
+      <RateAmount Night="2014-02-03" StayUnit="Nightly"><![CDATA[195.00]]></RateAmount>
+      <RateAmount Night="2014-02-04" StayUnit="Nightly"><![CDATA[195.00]]></RateAmount>
+      <!-- lots of nightly rates removed to shorten the example -->
+      <RateAmount Night="2014-06-18" StayUnit="Nightly"><![CDATA[127.00]]></RateAmount>
+      <RateAmount Night="2014-06-19" StayUnit="Nightly"><![CDATA[127.00]]></RateAmount>
+    </RateRanges>
+    <Specials>
+      <Special ExpirationDate="4/20/2014"><![CDATA[5th Night Free]]></Special>
+      <Special ExpirationDate="4/20/2014"><![CDATA[6th Night Free]]></Special>
+      <Special ExpirationDate="4/20/2014"><![CDATA[7th Night Free]]></Special>
+      <!-- lots of specials removed to shorten the example -->
+      <Special ExpirationDate="4/12/2014"><![CDATA[Save 10%]]></Special>
+      <Special ExpirationDate="4/12/2014"><![CDATA[Save 15%]]></Special>
+    </Specials>
+    <UnAvailableRanges>
+      <UnAvailableRange Night="2014-02-01" ClosedToArrival="true" />
+      <UnAvailableRange Night="2014-02-02" ClosedToArrival="true" />
+      <UnAvailableRange Night="2014-02-03" ClosedToArrival="true" />
+      <!-- lots of unavailable dates removed to shorten the example -->
+      <UnAvailableRange Night="2015-02-01" ClosedToArrival="true" />
+      <UnAvailableRange Night="2015-02-02" ClosedToArrival="true" />
+    </UnAvailableRanges>
+    <MinStayRanges>
+      <MinStayNights Night="2014-02-02" StayUnit="Nights"><![CDATA[1]]></MinStayNights>
+      <MinStayNights Night="2014-02-03" StayUnit="Nights"><![CDATA[1]]></MinStayNights>
+      <MinStayNights Night="2014-02-04" StayUnit="Nights"><![CDATA[1]]></MinStayNights>
+      <!-- lots of MNS removed to shorten the example -->
+      <MinStayNights Night="2014-05-19" StayUnit="Nights"><![CDATA[4]]></MinStayNights>
+      <MinStayNights Night="2014-05-20" StayUnit="Nights"><![CDATA[4]]></MinStayNights>
+    </MinStayRanges>
+  </Property>
+</Properties>
